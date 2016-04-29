@@ -1,59 +1,75 @@
-// Syntax parser e hoisting
-var x = y
-var y = 0
-qual o valor de x?
-A) null
-B) undefined
-C) 0
-D) não vai rodar
+var calcularResposta = gerarProblema(slide1)
+calcularResposta(escolhas)
 
-var x = soma(1,2)
-function soma(a, b) {
-  return a + b
+function gerarProblema(problema) {
+  return function(escolhas) {
+    var resultado = problema()
+    for (var escolha in escolhas) {
+      if (escolhas[escolha] === resultado)
+        console.log('resposta: ' + escolha)
+    }
+  }
+}
+
+
+
+// Syntax parser e hoisting
+function slide1() {
+  var x = y
+  var y = 0
+
+  return x
 }
 qual o valor de x?
-A) null
-B) undefined
-C) 3
-D) não vai rodar
+escolhas1 = {
+  "A": null,
+  "B": undefined,
+  "C": 0,
+  "D": "não vai rodar"
+}
 
-var x = z
+function slide2() {
+  var x = soma(1,2)
+  function soma(a, b) {
+    return a + b
+  }
+
+  return x
+}
 qual o valor de x?
-A) null
-B) undefined
-C) 0
-D) não vai rodar
+escolhas2 = {
+  "A": null,
+  "B": undefined,
+  "C": 3,
+  "D": "não vai rodar"
+}
+
+function slide3() {
+  var x = z
+  return x
+}
+qual o valor de x?
+escolhas3 = {
+  "A": null,
+  "B": undefined,
+  "C": 0,
+  "D": "não vai rodar"
+}
 
 function slide2() {
   function universo(x) {
     x = 42
   }
-  var x = []
+  var x = 0
   universo(x)
   return x
 }
-escolhas = {
+qual o valor de x?
+escolhas4 = {
   "A": null,
   "B": undefined,
-  "C": [],
+  "C": 0,
   "D": "não vai rodar"
-}
-/*
-qual o valor de x?
-A) null
-B) undefined
-C) []
-D) não vai rodar
-*/
-
-var calcularResposta = gerarProblema(slide2)
-calcularResposta(escolhas)
-
-function gerarProblema(problema) {
-  return function(respostas) {
-    var resultado = problema()
-    repostas[resultado]
-  }
 }
 
 
@@ -75,11 +91,19 @@ A)
 
 
 
+
+
+
+
+
+
+
+
+//function challenges
+
 function mesmo(x) {
   return x
 }
-
-
 
 function applyfunction(funx) {
   return function(x) {
