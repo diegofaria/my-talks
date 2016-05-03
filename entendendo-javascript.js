@@ -124,3 +124,19 @@ function addf(x) {
 }
 
 addf(3)(4)
+
+
+//coloring console
+var escolhas = {
+  "A": null,
+  "B": undefined,
+  "C": [],
+  "D": "não vai rodar"
+}
+console.log('%c dado o exemplo: \n\n' +
+a +
+'\n\nqual o valor de x?\n' +
+'A. null\n' +
+'B. undefined\n' +
+'C. 0\n' +
+'D. não vai rodar\n', 'background:#222; color: #bada55;')
