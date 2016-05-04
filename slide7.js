@@ -5,7 +5,7 @@ function troca(a, b) {
 }
 var x = 1
 var y = 2
-troca(x)
+troca(x, y)
 console.log(x)
 
 qual o valor de x e y?
