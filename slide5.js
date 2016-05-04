@@ -15,8 +15,8 @@ o que vai aparecer no console?
 escolhas = {
   "A": null,
   "B": undefined,
-  "D": 1
-  "C": 2,
+  "C": 1
+  "D": 2,
 }
 
 // Scope Chain and Lexical Environment
