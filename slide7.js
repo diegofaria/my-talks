@@ -1,8 +1,11 @@
-function sacanagem(a) {
-  a = 2
+function troca(a, b) {
+  var temp = a
+  a = b
+  b = temp
 }
 var x = 1
-sacanagem(x)
+var y = 2
+troca(x)
 console.log(x)
 
 qual o valor de x e y?
