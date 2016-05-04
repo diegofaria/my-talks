@@ -12,41 +12,12 @@ function gerarProblema(problema) {
 }
 
 
-
-// Syntax parser e hoisting
-function slide1() {
-  var x = y
-  var y = 0
-
-  return x
-}
-qual o valor de x?
-escolhas1 = {
-  "A": null,
-  "B": undefined,
-  "C": 0,
-  "D": "não vai rodar"
-}
-
-function slide2() {
-  var x = soma(1,2)
-  function soma(a, b) {
-    return a + b
-  }
-
-  return x
-}
-qual o valor de x?
-escolhas2 = {
-  "A": null,
-  "B": undefined,
-  "C": 3,
-  "D": "não vai rodar"
-}
-
+ // Syntax parser e compiling
 function slide3() {
-  var x = z
-  return x
+
+  var x = y
+  console.log(x)
+
 }
 qual o valor de x?
 escolhas3 = {
@@ -56,13 +27,85 @@ escolhas3 = {
   "D": "não vai rodar"
 }
 
+
+// variable hoisting
+function slide1() {
+
+  console.log(x)
+  var x = 1
+
+}
+qual o valor de x?
+escolhas1 = {
+  "A": null,
+  "C": 1,
+  "B": undefined,
+  "D": "não vai rodar"
+}
+
+
+// function hoisting
+function slide2() {
+
+  var x = soma(1,2)
+  console.log(x)
+  function soma(a, b) {
+    return a + b
+  }
+
+}
+qual o valor de x?
+escolhas2 = {
+  "A": null,
+  "B": undefined,
+  "C": 3,
+  "D": "não vai rodar"
+}
+
+
+(function slide2() {
+  var x = 0
+  function universo() {
+    var x = 42
+    console.log(x)
+  }
+  universo()
+  console.log(x)
+})()
+qual o valor de x?
+escolhas4 = {
+  "A": null,
+  "B": undefined,
+  "C": 0,
+  "D": "não vai rodar"
+}
+
+
+// execution stack
+(function slide2() {
+  var x = 0
+  function universo() {
+    console.log(x)
+  }
+  universo()
+})()
+qual o valor de x?
+escolhas4 = {
+  "A": null,
+  "B": undefined,
+  "C": 0,
+  "D": "não vai rodar"
+}
+
+
+
 function slide2() {
   function universo(x) {
     x = 42
   }
-  var x = 0
-  universo(x)
-  return x
+  var z = 0
+  universo(z)
+  console.log(x)
 }
 qual o valor de x?
 escolhas4 = {
