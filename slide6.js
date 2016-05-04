@@ -5,7 +5,7 @@ var x = 1
 sacanagem(x)
 console.log(x)
 
-qual o valor de x e y?
+o que vai aparecer no console?
 escolhas = {
   "A": 1,
   "B": 2,
