@@ -1,7 +1,7 @@
-var x = soma(1,2)
-console.log(x)
-function soma(a, b) {
-  return a + b
+a()
+
+function a() {
+  console.log("bla")
 }
 
 
@@ -9,8 +9,8 @@ o que vai aparecer no console?
 escolhas = {
   "A": null,
   "B": undefined,
-  "C": 3,
-  "D": "não vai rodar"
+  "C": "bla",
+  "D": "ReferenceError: a is not defined"
 }
 
 

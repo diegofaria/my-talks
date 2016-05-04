@@ -1,14 +1,13 @@
-console.log("bla")
-var x = y
 console.log(x)
+var x = 1
 
 
 o que vai aparecer no console?
 escolhas = {
-  "A": "bla" e null,
-  "B": "bla" e undefined,
-  "C": "ReferenceError: y is not defined",
-  "D": "bla" e "ReferenceError: y is not defined"
+  "A": null,
+  "B": undefined,
+  "C": 1,
+  "D": "ReferenceError: x is not defined"
 }
 
-// Execution Context: creation phase
+// Hoisting variable
