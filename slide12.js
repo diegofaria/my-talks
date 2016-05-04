@@ -1,5 +1,5 @@
 escreva uma função que receba uma função
-de binaria, e retorne uma função que seja
+binaria, e retorne uma função que seja
 chamada com duas invocações distintas
 
 var funcaoSoma = aplicarFuncao(add)
