@@ -10,4 +10,5 @@ escolhas = {
   "D": "ReferenceError: x is not defined"
 }
 
-// Hoisting variable
+// Execution Context: creation phase
+// e variable Hoisting variable
