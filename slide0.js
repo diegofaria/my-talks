@@ -5,7 +5,7 @@ o que vai aparecer no console?
 escolhas = {
   "A": null,
   "B": undefined,
-  "C": 0,
+  "C": Window,
   "D": "algum tipo de erro"
 }
 */
