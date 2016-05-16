@@ -1,12 +1,7 @@
-var concepts = {
-  "syntax-parser": "translate your code into machine language",
-  "lexical-environment": "where something sits phisically in your code",
-  "execution-context": "wraps and manage which code is running, and more...",
-  "name/value pair": {
-      "rule1" : "one name reference to a unique value in any context",
-      "rule2" : "the value can be more name/value pairs"
-  },
-  "object": "collection of name/value pairs"
+var conceitos = {
+  "analisador-de-sintaxe": "traduz o código para linguagem de máquina",
+  "ambiente-léxico": "onde algo está fisicamente no seu código",
+  "contexto-de-execução": "wraps and manage which code is running, and more...",
 }
 
 
