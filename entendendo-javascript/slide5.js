@@ -15,7 +15,7 @@ o que vai aparecer no console?
 escolhas = {
   "A": null,
   "B": undefined,
-  "C": 1
+  "C": 1,
   "D": 2,
 }
 
